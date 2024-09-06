@@ -2,7 +2,7 @@ import { Permission } from "appwrite";
 import { databases } from "./config";
 import { db, answerCollection } from "../name";
 
-export async function createAnswerCollection() {
+export default async function createAnswerCollection() {
   await databases.createCollection(db, answerCollection, answerCollection, [
     Permission.create("users"),
     Permission.delete("users"),
