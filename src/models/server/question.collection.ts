@@ -36,7 +36,7 @@ export default async function createQuestionCollection() {
   console.log("Question Attributes is  created");
 
   // creating indexes
-  /*
+
   await Promise.all([
     databases.createIndex(
       db,
@@ -55,5 +55,5 @@ export default async function createQuestionCollection() {
       ["asc"]
     ),
   ]);
-    console.log("Indexes are created ")*/
+  console.log("Indexes are created ");
 }

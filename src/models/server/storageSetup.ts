@@ -13,18 +13,18 @@ export default async function getOrCreateStorage() {
         questionAttachmentBucket,
         questionAttachmentBucket,
         [
-          // Permission.create("users"),
-          // Permission.read("users"),
-          // Permission.update("users"),
-          // Permission.delete("users"),
-          // Permission.read("any"),
-          Permission.create(Role.guests()), // Allow guests to create
-          Permission.write(Role.guests()), // Allow guests to write
-          Permission.create(Role.users()), // Allow authenticated users to create
-          Permission.read(Role.users()), // Allow authenticated users to read
-          Permission.update(Role.users()), // Allow authenticated users to update
-          Permission.delete(Role.users()), // Allow authenticated users to delete
-          Permission.read(Role.any()),
+          Permission.create("users"),
+          Permission.read("users"),
+          Permission.update("users"),
+          Permission.delete("users"),
+          Permission.read("any"),
+          // Permission.create(Role.guests()),
+          // Permission.write(Role.guests()),
+          // Permission.create(Role.users()),
+          // Permission.read(Role.users()),
+          // Permission.update(Role.users()),
+          // Permission.delete(Role.users()),
+          // Permission.read(Role.any()),
         ],
         false,
         undefined,
