@@ -1,5 +1,4 @@
 import env from "@/app/env";
-import { clearModuleContext } from "next/dist/server/lib/render-server";
 
 import { Avatars, Client, Databases, Storage, Users } from "node-appwrite";
 let client = new Client();
