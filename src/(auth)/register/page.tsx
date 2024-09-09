@@ -1,5 +1,6 @@
+"use client";
+
 import { useAuthStore } from "@/store/Auth";
-import { setGlobal } from "next/dist/trace";
 import React, { useState } from "react";
 
 function registerPage() {
@@ -44,7 +45,14 @@ function registerPage() {
     setIsloading(false);
   };
 
-  return <div>registerPage</div>;
+  return (
+    <div className="">
+      {error && <p>{error}</p>}
+      <div className="">
+        <form onSubmit={handleSubmit}></form>
+      </div>
+    </div>
+  );
 }
 
 export default registerPage;
