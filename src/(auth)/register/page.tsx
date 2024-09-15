@@ -51,6 +51,7 @@ function registerPage() {
       <div className="">
         <form onSubmit={handleSubmit}></form>
       </div>
+      
     </div>
   );
 }
