@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
 import { relative } from "path";
 import React from "react";
-import Meteors from "@/components/magicui/meteors";
+import Meteors from "@/components/magicui/Meteors";
 const LabelnputContainer = ({
   children,
   classname,
 }: {
-  children: React.Reactnode;
+  children: React.ReactNode;
   classname?: string;
 }) => {
   return (
